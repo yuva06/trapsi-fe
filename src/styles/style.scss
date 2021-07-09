@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: CeraRoundProThin;
+  src: url("../font/CeraProBlack.ttf");
+}
+@font-face {
+  font-family: CeraRoundProMedium;
+  src: url("../font/CeraProLight.ttf");
+}
+@font-face {
+  font-family: CeraRoundProRegular;
+  src: url("../font/CeraProMedium.ttf");
+}
+body {
+  position: relative;
+  background: #0b0b0b;
+  font-family: CeraRoundProMedium;
+}
+.h1-m {
+  font-size: 2rem;
+  color: #fff;
+  font-family: CeraRoundProThin;
+  span {
+    color: #d500f9;
+  }
+}
+.p-m {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: CeraRoundProMedium;
+}
+.small-m {
+  font-size: 1.2rem;
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+button,
+select,
+input {
+  outline: none;
+}
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 550px) {
+  .h1-m {
+    font-size: 1.5rem;
+  }
+  .p-m {
+    font-size: 1.2rem;
+  }
+  .small-m {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@import "../components/heroSection/heroSection";
+@import "../components/navBar/navBar";
+@import "../components/serviceSection/serviceSection";
+@import "../components/footer/footer";
+@import "../components/works/worksSection";
+@import "../components/about/About";
+@import "../components/contact/Contact";
+@import "../components/blog/blog";
+@import "../components/PreLoader/PreLoader";
+@import "../components/Learning/UIUX/UIUX";
+@import "../components/Learning/FullStack/FullStack";
+@import "../components/Learning/LearningPage";

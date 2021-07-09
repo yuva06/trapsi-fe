@@ -1,0 +1,142 @@
+.AboutSection {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .AboutSecImg {
+    text-align: center;
+  }
+  img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .AboutSection {
+    .AboutSecImg {
+      text-align: left;
+    }
+    img {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .AboutSection {
+    .h1-m {
+      margin-top: 130px;
+    }
+  }
+}
+
+.AboutClientSection {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px 0;
+  .AboutClientSectionTitle {
+    margin-bottom: 20px;
+  }
+  .row {
+    .col-md-3 {
+      flex-basis: 20%;
+      max-width: 20%;
+    }
+  }
+  .AboutClientFlex {
+    padding: 30px;
+    max-width: 200px;
+    height: 200px;
+    background: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    img {
+      width: 100px;
+      // mix-blend-mode: ;
+    }
+  }
+  .AboutClientFlex1 {
+    img {
+      width: 100px;
+      filter: white;
+      filter: grayscale(1);
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .AboutClientSection {
+    padding: 20px 0;
+    .row {
+      .col-md-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .AboutClientSection {
+    padding: 20px 0;
+    .row {
+      .col-md-3 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .AboutClientSection {
+    padding: 20px 0;
+    margin-top: 30px;
+    .AboutClientFlex {
+      padding: 30px;
+      max-width: 140px;
+      height: 140px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      img {
+        width: 80px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 430px) {
+  .AboutClientSection {
+    padding: 20px 0;
+    .AboutClientFlex {
+      padding: 20px;
+      max-width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .AboutClientSection {
+    padding: 20px 0;
+    .row {
+      .col-md-3 {
+        padding: 0;
+      }
+    }
+    .AboutClientFlex {
+      padding: 20px;
+      max-width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

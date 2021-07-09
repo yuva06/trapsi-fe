@@ -1,0 +1,131 @@
+.HeroCallSection {
+  position: relative;
+  min-height: 50vh;
+  margin-top: 50px;
+  background: url("../assets/heroSection/call-section.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .row {
+    .col-md-6 {
+      .h1-m {
+        font-size: 3rem;
+        margin-left: 30px;
+        font-weight: 300;
+      }
+      .WorksSectionMainNavBtn {
+        padding: 10px;
+        border: 1px solid transparent;
+        &:hover {
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .HeroCallSection {
+    .row {
+      .col-md-6 {
+        .h1-m {
+          font-size: 2rem;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.HeroFooter {
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  .row {
+    .col-md-4 {
+      &.logo {
+        text-align: center;
+        img {
+          width: 35px;
+        }
+      }
+      .p-m {
+        font-size: 0.9rem;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      .HeroFooterNewFlex {
+        justify-content: flex-end;
+      }
+      .HeroFooterSmLinksFlex {
+        display: flex;
+        justify-content: space-between;
+        max-width: 300px;
+        .small-m {
+          font-size: 0.9rem;
+          margin-right: 10px;
+        }
+        a {
+          color: #fff;
+          &:hover {
+            color: #d500f9;
+          }
+        }
+        i {
+          font-size: 15px;
+          margin: 0 7px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .HeroFooter {
+    .row {
+      .col-md-4 {
+        text-align: center;
+        &.logo {
+          display: none;
+          margin-bottom: 10px;
+          img {
+            width: 50px;
+          }
+        }
+        .p-m {
+          margin-bottom: 10px;
+          font-size: 0.9rem;
+        }
+        .HeroFooterSmLinksFlex {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .HeroFooter {
+    margin-bottom: 65px;
+    .row {
+      .col-md-4 {
+        .p-m {
+          font-size: 0.9rem;
+        }
+        .HeroFooterSmLinksFlex {
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}

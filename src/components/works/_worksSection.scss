@@ -1,0 +1,305 @@
+.WorkHeader {
+  position: relative;
+  min-height: 100vh;
+  background: url("../assets/workSection/worksHeader.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .h1-m {
+    max-width: 480px;
+    font-size: 2.8rem;
+    font-family: CeraRoundProThin, sans-serif;
+    line-height: 1.1;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .WorkHeader {
+    .h1-m {
+      max-width: 450px;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .WorkHeader {
+    .h1-m {
+      max-width: 350px;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.worksDetailsMain {
+  position: relative;
+  min-height: 550px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e88e5;
+  border-radius: 50px;
+  padding: 30px 0;
+  margin-top: 150px;
+  transition: 0.5s ease;
+  .imgAb {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &:hover {
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba($color: #000000, $alpha: 0.5);
+      z-index: 2;
+    }
+    .imgAb {
+      display: block;
+      img {
+        animation: AnimationZoom 15s;
+      }
+    }
+    @keyframes AnimationZoom {
+      from {
+        width: 100%;
+      }
+      to {
+        width: 150%;
+      }
+    }
+  }
+  .cont {
+    position: relative;
+    z-index: 3;
+    margin-left: 60px;
+  }
+  .d-none-m {
+    display: none;
+  }
+  .DreamsWeBuildBtn {
+    margin-top: 20px;
+    button {
+      background: rgba($color: #d500f9, $alpha: 0.5);
+      &:hover {
+        background: rgba($color: #d500f9, $alpha: 1);
+      }
+    }
+  }
+  .row {
+    align-items: center;
+    .col-md-6 {
+      .WorksSectionMainImage {
+        position: relative;
+        z-index: 3;
+        height: 400px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .h1-m {
+        margin-bottom: 10px;
+      }
+      .p-m {
+        color: #000;
+      }
+      .small-m {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        font-family: CeraRoundProRegular;
+      }
+      ul {
+        list-style: none;
+        margin-left: 10px;
+        li {
+          font-size: 1.2rem;
+          margin: 1px 0;
+          color: #fff;
+        }
+      }
+      .worksBtn {
+        text-align: center;
+        margin-top: 10px;
+        button {
+          border: 3px solid #333;
+          padding: 5px 15px;
+          border-radius: 50px;
+          color: #333;
+          font-weight: 500;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.WorksSectionMainNavBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 20px;
+  z-index: 3;
+  .p-m {
+    color: #fff !important;
+    font-size: 1rem;
+    font-family: CeraRoundProRegular;
+  }
+  span {
+    margin-left: 10px;
+    transition: 0.3s;
+  }
+  &:hover {
+    span {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .worksDetailsMain {
+    padding: 30px 0;
+    .row {
+      .col-md-6 {
+        .worksBtn {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .worksDetailsMain {
+    padding: 30px 0;
+    .row {
+      .col-md-6 {
+        .DreamsWeBuildBtn {
+          display: none;
+        }
+        .d-none-m {
+          margin-left: 60px;
+          display: block;
+        }
+      }
+    }
+  }
+  .d-block-m {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .worksDetailsMain {
+    padding: 30px 0;
+    border-radius: 10px;
+    .row {
+      .col-md-6 {
+        .WorksSectionMainImage {
+          height: 250px;
+        }
+        .small-m {
+          font-size: 1.5rem;
+        }
+        ul {
+          margin-left: 10px;
+          li {
+            font-size: 1.2rem;
+          }
+        }
+        .worksBtn {
+          text-align: left;
+          button {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .worksDetailsMain {
+    padding: 30px 0;
+    border-radius: 10px;
+    margin-top: 50px;
+    .row {
+      .col-md-6 {
+        .cont {
+          margin-left: 20px;
+        }
+        .d-none-m {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.worksDetailsMain2 {
+  background: #e01c33;
+}
+
+.worksDetailsMain3 {
+  background: #ffc107;
+}
+
+.worksDetailsMain4 {
+  background: #00acc1;
+}
+.worksDetailsMain5 {
+  background: #db0a2d;
+}
+.worksDetailsMain6 {
+  background: #eedccf;
+}
+.worksDetailsMain7 {
+  background: #ff5722;
+}
+.worksDetailsMain8 {
+  background: #8e24aa;
+}
+.worksDetailsMain10 {
+  background: #304ffe;
+}
+.worksDetailsMain9 {
+  background: #001161;
+  .row {
+    .col-md-6 {
+      .p-m {
+        color: #fff;
+        font-weight: 300;
+      }
+      ul {
+        li {
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
